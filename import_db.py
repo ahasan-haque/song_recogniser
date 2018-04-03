@@ -12,7 +12,6 @@ def import_database():
     for file_name in os.listdir(database_import_directory):
         if file_name.endswith(".sql"):
             file_path = "{}/{}".format(database_import_directory, file_name)
-            print(file_path)
 
     command = "mysql -u {} {} < {}".format(user, database, file_path)
     call(command, shell=True)

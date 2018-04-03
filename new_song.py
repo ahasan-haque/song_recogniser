@@ -16,7 +16,6 @@ def check_duplicate_data():
     for file in new_files_url:
         song = djv.recognize(FileRecognizer, file)
         if song and song['confidence'] > 1000:
-            print song
             current_name = file.split('/')[-1].split('.')[0]
             orig_name = song['song_name']
             duplicate_data.append([current_name, orig_name])
