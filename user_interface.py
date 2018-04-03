@@ -29,4 +29,4 @@ while True:
         6: import_database
     }
 
-    dic[number]()
+    dic.get(number, exit)()

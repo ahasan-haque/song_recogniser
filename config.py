@@ -6,7 +6,7 @@ config = {
      "database": {
          "host": "127.0.0.1",
          "user": "root",
-         "passwd": "test",
+         "passwd": "",
          "db": "dejavu",
      },
      "database_type" : "mysql",
@@ -15,7 +15,7 @@ config = {
 
 
 def create_database():
-    db1 = MySQLdb.connect(host="localhost", user="root", passwd="test")
+    db1 = MySQLdb.connect(host="localhost", user="root", passwd="")
     cursor = db1.cursor()
     sql = "CREATE DATABASE IF NOT EXISTS dejavu;"
     cursor.execute(sql)
