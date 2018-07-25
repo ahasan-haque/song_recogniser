@@ -8,7 +8,7 @@ numpy==1.10.0
 oauthlib==0.6.1
 pbr==3.1.1
 pexpect==3.1
-Pillow==2.3.0
+Pillow==3.1.1
 PyAudio==0.2.11
 pycrypto==2.6.1
 PyDejavu==0.1.3
